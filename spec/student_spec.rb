@@ -24,7 +24,7 @@ describe "Student" do
   end
 
   it 'does not provide a setter for :id' do
-    expect{josh.id == 1}.to raise_error(NoMethodError)
+    expect{josh.id = 1}.to raise_error(NoMethodError)
   end
 
   describe ".create_table" do
